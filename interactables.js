@@ -18,7 +18,7 @@ tracks.forEach(track => {
     
         const scrollMagnitude = (mouseDelta/ maxDelta) * -100, 
         scrollPositionUncapped = scrollMagnitude + parseFloat(track.dataset.scrollProgress),
-        scrollPosition = Math.max(Math.min(scrollPositionUncapped, 0), -60);
+        scrollPosition = Math.max(Math.min(scrollPositionUncapped, 0), -80);
         track.dataset.scrollPosition = scrollPosition;
     
         track.animate({
